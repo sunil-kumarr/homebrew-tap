@@ -25,17 +25,17 @@ class LastcodeTui < Formula
 
   resource "rich" do
     url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.7.1.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"
   end
 
   resource "pygments" do
     url "https://files.pythonhosted.org/packages/source/p/pygments/pygments-2.18.0.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199"
   end
 
   resource "typing_extensions" do
     url "https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-4.12.0.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "8cbcdc8606ebcb0d95453ad7dc5065e6237b6aa230a31e81d0f440c30fed5fd8"
   end
 
   include Language::Python::Virtualenv
