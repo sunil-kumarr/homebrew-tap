@@ -26,16 +26,14 @@ class LastcodeTui < Formula
   include Language::Python::Virtualenv
 
   def install
-    # Creates an isolated Python virtualenv directly inside the Homebrew cellar location
-    virtualenv_create(libexec, "python3.12")
+    # Creates the virtualenv and assigns it to the 'venv' variable
+    venv = virtualenv_create(libexec, "python3.12")
     
-    # Installs the packaged dependencies first
-    resources.each do |r|
-      libexec.pip_install r
-    end
+    # Tells the virtualenv to install all defined resources (textual, etc.)
+    venv.pip_install resources
     
-    # Installs your primary TUI binary app
-    libexec.pip_install_and_link buildpath
+    # Tells the virtualenv to install your app and link the binary
+    venv.pip_install_and_link buildpath
   end
 
   test do
