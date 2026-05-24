@@ -1,8 +1,8 @@
 class LastcodeTui < Formula
   desc "An interactive Terminal User Interface (TUI) for real-time algorithm visualization"
   homepage "https://github.com/sunil-kumarr/lastcode" # Update with your main repo link
-  url "https://files.pythonhosted.org/packages/f2/e4/fdc63397ad0abd76ef8ff74252be6ca3341299bc1d73f32935b8422360ad/lastcode_tui-0.1.1.tar.gz"
-  sha256 "9b6a93ba1303fac0cab61cfaeee32237d09aaa64a2cac618b82e4ca549449708"
+  url "https://files.pythonhosted.org/packages/c7/38/da4dd7605ff45fedf5fbb01f4532e8af4ce438e612b61a241fd35c26192f/lastcode_tui-0.1.2.tar.gz"
+  sha256 "1997a3b376b6db6c952963770e7012c9b65df1955e4d2be071961b10f75d06c1"
 
   depends_on "python@3.12"
 
