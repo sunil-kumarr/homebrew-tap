@@ -23,6 +23,21 @@ class LastcodeTui < Formula
     sha256 "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"
   end
 
+  resource "rich" do
+    url "https://files.pythonhosted.org/packages/source/r/rich/rich-13.7.1.tar.gz"
+    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  end
+
+  resource "pygments" do
+    url "https://files.pythonhosted.org/packages/source/p/pygments/pygments-2.18.0.tar.gz"
+    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  end
+
+  resource "typing_extensions" do
+    url "https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-4.12.0.tar.gz"
+    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  end
+
   include Language::Python::Virtualenv
 
   def install
