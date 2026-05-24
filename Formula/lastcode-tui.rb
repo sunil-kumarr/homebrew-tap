@@ -6,21 +6,21 @@ class LastcodeTui < Formula
 
   depends_on "python@3.12"
 
-  # We vendor Textual directly as a standalone resource
+ # We vendor Textual directly as a standalone resource
   resource "textual" do
     url "https://files.pythonhosted.org/packages/source/t/textual/textual-0.47.0.tar.gz"
-    sha256 "05b45151b7fa093c1cf786937517c24097491d90060e227fc66d34bde5cfb61d"
+    sha256 "613912041aa8739e4ef728bb298b6d00f2bfe3fe528ac64bc0ccc06f4ff656e0"
   end
 
   # We also include 'markdown-it-py' and 'linkify-it-py' which textual needs to render text
   resource "markdown-it-py" do
     url "https://files.pythonhosted.org/packages/source/m/markdown-it-py/markdown-it-py-3.0.0.tar.gz"
-    sha256 "e3f6ee041839e599aae64082269e2df3415606764f147b420f86af53c6ad3c0c"
+    sha256 "e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb"
   end
 
   resource "mdurl" do
     url "https://files.pythonhosted.org/packages/source/m/mdurl/mdurl-0.1.2.tar.gz"
-    sha256 "5133656e4773a1ba84512b1a9e920d36ef534a8190022f462f6b472e00def751"
+    sha256 "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"
   end
 
   include Language::Python::Virtualenv
